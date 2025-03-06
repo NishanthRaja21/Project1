@@ -43,4 +43,8 @@ st.write(f"R² Score: {r2}")
 
 # Plot Actual vs Predicted Yield
 fig, ax = plt.subplots()
-ax.scatter(y_test, y
+ax.scatter(y_test, y_pred, alpha=0.5)
+ax.set_xlabel("Actual Yield")
+ax.set_ylabel("Predicted Yield")
+ax.set_title("Actual vs Predicted Yield")
+st.pyplot(fig)  # This replaces plt.show() in Streamlit
