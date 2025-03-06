@@ -7,7 +7,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 from sklearn.preprocessing import StandardScaler
-df = pd.read_csv("D:\ML\crop_yield.csv")
+df = pd.read_csv("crop_yield.csv")
 df.head()
 X = df.drop(columns=['Yield']) 
 y = df['Yield'] 
